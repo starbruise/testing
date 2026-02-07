@@ -1,0 +1,169 @@
+body{
+  background-color: #e0a1c7;  
+    background-blend-mode: overlay; 
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+}
+
+body{
+    background-image: url(tgcf.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bunny {
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  z-index: 200;
+}
+
+.bunny img {
+  width: 320px; /* adjust size*/
+  height: auto;
+}
+
+
+.scene {
+  position: relative;   
+  width: 800px;
+}
+
+.room {
+  width: 800px;
+  height: auto;
+  display: block;
+}
+
+.rbows {
+  position: absolute;
+  top: -180px;
+  left: -250px;
+  width: 1240px;
+  height: auto;
+  pointer-events: none;
+}
+
+.cake {
+  position: absolute;
+  top: 280px;
+  left: 188px;
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+#lebroncat {
+  position: fixed;
+  bottom: -300px;      /* start off-screen */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  opacity: 0;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+#lebroncat.show {
+  animation: catBounce 1.6s cubic-bezier(.17,.89,.32,1.49) forwards;
+}
+
+@keyframes catBounce {
+  0% {
+    bottom: -300px;
+    opacity: 0;
+    transform: translateX(-50%) scale(0.8);
+  }
+
+  30% {
+    opacity: 1;
+    bottom: 40vh%;
+    transform: translateX(-50%) scale(1.1);
+  }
+
+  50% {
+    bottom: 38%;
+    transform: translateX(-50%) scale(0.95);
+  }
+
+  70% {
+    bottom: 46%;
+    transform: translateX(-50%) scale(1.05);
+  }
+
+  85% {
+    bottom: 43%;
+    transform: translateX(-50%) scale(1);
+  }
+
+100% {
+    bottom: 38vh;
+    opacity: 0;
+    transform: translateX(-50%) scale(2.6);
+  }
+}
+
+@keyframes screenShake {
+  0% { transform: translate(0,0); }
+  25% { transform: translate(-6px,4px); }
+  50% { transform: translate(6px,-4px); }
+  75% { transform: translate(-4px,3px); }
+  100% { transform: translate(0,0); }
+}
+
+body.shake {
+  animation: screenShake 0.35s;
+}
+
+#one{
+    height: 500px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;   
+  }
+  
+  a{
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: #921d1d;
+    transition-duration: 1.4s;
+  }
+
+  #two{
+    font-size: 30px;
+  }
+  
+  #two:hover{
+    font-size: 40px;
+        letter-spacing: 5px;
+    transition-duration: 2s;
+  }
+  
+  .image2{
+    position:relative;
+    top:100px;      
+    border: 3px solid rgb(255, 255, 255);  
+  }
+  
+  .text2{
+    position:relative;
+    top:100px;      
+    }
+
+      * {
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur'), auto;
+}
+
+a:hover,
+.cake:hover {
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur'), pointer;
+}
+
+
+
+

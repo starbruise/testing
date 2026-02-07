@@ -1,0 +1,87 @@
+body {
+  background-image: url("hehe.png");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 25%;
+  background-size: 500px auto; /* adjust size here */
+  background-color: #e0a1c7;      /* REQUIRED for blend modes */
+  background-blend-mode: overlay;
+}
+
+.paperhart {
+  width: 200px;   /* change size */
+  height: auto;
+}
+
+
+#one{
+    height: 500px;
+    display: flex;
+    justify-content: center;   
+    align-items: center;   
+  }
+  
+  a{
+    text-align: center;
+    font-size: 17px;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    color: #bc1414;
+    letter-rgb(80, 255, 98)ng: 3px;
+    transition-duration: 2s;
+  }
+  
+  #two{
+    font-size: 30px;
+  }
+  
+  #two:hover{
+    font-size: 40px;
+    color: #e0a1c7;
+    letter-spacing: 5px;
+    transition-duration: 2s;
+  }
+  
+  .image2{
+    position:relative;
+    top:100px;      
+    border: 3px solid #ffffff;  
+  }
+  
+  .text2{
+    position:relative;
+    top:100px;      
+  }
+
+  body {
+  font-family: "Poppins", sans-serif;
+}
+
+#two {
+  font-family: "Agency FB", sans-serif;
+}
+
+
+.handwritten {
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.signature {
+  font-family: "Great Vibes", cursive;
+  font-size: 28px;
+}
+
+  
+  * {
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur1054.cur'), auto;
+}
+
+a:hover,
+.paperhart:hover {
+  cursor: url('https://cur.cursors-4u.net/cursors/cur-11/cur1049.cur'), pointer;
+}
+
+
+
